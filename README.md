@@ -44,3 +44,20 @@ Toujours à la racine du dossier téléchargé, lance la commande **./configure*
 
 ![image](https://github.com/techerbeatrice/La-ToIP_avec_Asterisk/assets/138071140/37cb62bc-5064-475d-af97-226e0cf1c935)
 
+Il est possible qu'il manque le paquet **libedit**, exécute la commande **sudo apt install libedit-dev** puis relance le **./configure**     
+
+![image](https://github.com/techerbeatrice/La-ToIP_avec_Asterisk/assets/138071140/28e0f195-cfb2-4dc7-a2bf-6b81bd97fce9) 
+
+![image](https://github.com/techerbeatrice/La-ToIP_avec_Asterisk/assets/138071140/81f1157e-889d-4e1a-aa07-39889f1c950c)
+
+![image](https://github.com/techerbeatrice/La-ToIP_avec_Asterisk/assets/138071140/3560a6d1-e433-4059-b9ef-9a3e24c3fe2a)
+
+![image](https://github.com/techerbeatrice/La-ToIP_avec_Asterisk/assets/138071140/02f6eaa5-d010-4f11-bcef-f11eff415729)
+
+____    
+
+Pour ouvrir le menu de configuration, exécute la commande **make menuselect**      
+La commande **make menuselect** va créer une interface graphique en mode texte. Elle te permet de configurer les options de compilation d'Asterisk.   
+En te déplaçant dans cette interface avec le clavier, tu peux sélectionner les modules et les fonctionnalités à inclure pour l'installation.   
+N’hésite pas à modifier les options qui te sont proposé pour faire des tests.    
+
