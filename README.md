@@ -7,7 +7,9 @@ ____
 
 #  🔬 Téléchargement des sources et installation des dépendances       
 
-Au préalable, faire les mises à jour de paquets avec **apt update && apt upgrade -y** puis installer asterisk avec la commande **apt policy asterisk**    
+Au préalable, faire les mises à jour de paquets avec **apt update && apt upgrade -y** puis installer asterisk avec la commande **apt policy asterisk** et **sudo apt install asterisk**  
+
+![image](https://github.com/techerbeatrice/La-ToIP_avec_Asterisk/assets/138071140/b51166d6-10c1-4beb-be65-79862c1c6a91)
 
 ![image](https://github.com/techerbeatrice/La-ToIP_avec_Asterisk/assets/138071140/d1134d21-8816-4429-8edf-9f6105730f59)
 
@@ -118,11 +120,9 @@ Créer un **groupe asterisk** avec la commande **sudo groupadd asterisk**
 Créer un utilisateur avec les paramètres suivants :   
 Nom : **asterisk**    
 Type d'utilisateur : **système (avec l'option -r)**     
-Dossier de travail : **/var/lib/asterisk**  avec la commande ** avec **sudo useradd -r -g asterisk -d /var/lib/asterisk -s /bin/false asterisk**     
+Dossier de travail : **/var/lib/asterisk**  avec la commande avec **sudo useradd -r -d /var/lib/asterisk -g asterisk asterisk**     
 Groupe principal : **asterisk**   
 Pour permettre à Asterisk d'accéder aux périphériques audio et aux ports de communication, ajoute l'utilisateur **asterisk**  aux groupes **audio et dialout** avec la commande **sudo usermod -aG audio,dialout asterisk**  
-
-![image](https://github.com/techerbeatrice/La-ToIP_avec_Asterisk/assets/138071140/10dd4fa5-44ce-412a-92bf-2024fe2f460b)
 
 ___
 
@@ -132,22 +132,32 @@ Pour tous les fichiers et répertoires de la liste ci-dessous, **change le propr
 **/var/log/asterisk**   
 **/var/spool/asterisk**   
 **/usr/lib/asterisk**  
-avec la commande **sudo chown -R asterisk:asterisk /etc/asterisk /var/lib/asterisk /var/log/asterisk /var/spool/asterisk /usr/lib/asterisk**   et  **sudo chmod -R 0700 /etc/asterisk /var/lib/asterisk /var/log/asterisk /var/spool/asterisk /usr/lib/asterisk**   
+avec les commandes :   
+sudo chown -R asterisk.asterisk /etc/asterisk   
+sudo chown -R asterisk.asterisk /var/{lib,log,spool}/asterisk   
+sudo chown -R asterisk.asterisk /usr/lib/asterisk   
 
-Pour les fichiers et répertoires sous **/var/run/asterisk**, change les permissions pour que l'utilisateur asterisk ait **accès en RWE (Read, Write, Execute)** tandis que les autres utilisateurs ne peuvent y **accéder qu'en RW**  avec les commandes :   
-**sudo chown -R asterisk:asterisk /var/run/asterisk**   
-**sudo chmod -R 0700 /var/run/asterisk**   
+Pour les fichiers et répertoires sous **/var/run/asterisk**, change les permissions pour que l'utilisateur asterisk ait **accès en RWE (Read, Write, Execute)** tandis que les autres utilisateurs ne peuvent y **accéder qu'en RW**  avec les commandes :     
+**sudo chmod -R 750 /var/{lib,log,run,spool}/asterisk /usr/lib/asterisk /etc/asterisk**   
 
-![image](https://github.com/techerbeatrice/La-ToIP_avec_Asterisk/assets/138071140/2c0adb09-b05d-42c2-85bc-d5a79635a53b)
-
-____
-
-![image](https://github.com/techerbeatrice/La-ToIP_avec_Asterisk/assets/138071140/0b97c094-8911-4634-98d1-4305b157bcd8)
+![image](https://github.com/techerbeatrice/La-ToIP_avec_Asterisk/assets/138071140/609488d1-075f-4e67-9ba6-340a3d9803dd)
 
 ___
+
+Configuration   
+La configuration d'Asterisk s'articule sur les fichiers de configuration suivants :   
+
+/etc/asterisk/sip.conf : Configuration globale d'Asterisk  
+/etc/asterisk/users.conf : Configuration des utilisateurs   
+/etc/asterisk/extensions.conf : Configuration du Dialplan   
+/etc/asterisk/voicemail.conf : Configuration des messageries   
+
+_____
 
 ![image](https://github.com/techerbeatrice/La-ToIP_avec_Asterisk/assets/138071140/cf9d964a-b455-4833-b601-0df8ac21021d)
 
 modifier le fichier de configuration **sip.conf**  
 
+![image](https://github.com/techerbeatrice/La-ToIP_avec_Asterisk/assets/138071140/7ee4bc00-b317-424a-9537-ee89ace1f4c9)
 
+![image](https://github.com/techerbeatrice/La-ToIP_avec_Asterisk/assets/138071140/b1c16e6d-e375-4db3-b55f-05fe280f368c)
