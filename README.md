@@ -59,5 +59,9 @@ ____
 Pour ouvrir le menu de configuration, exécute la commande **make menuselect**      
 La commande **make menuselect** va créer une interface graphique en mode texte. Elle te permet de configurer les options de compilation d'Asterisk.   
 En te déplaçant dans cette interface avec le clavier, tu peux sélectionner les modules et les fonctionnalités à inclure pour l'installation.   
-N’hésite pas à modifier les options qui te sont proposé pour faire des tests.    
+N’hésite pas à modifier les options qui te sont proposées pour faire des tests.  
+
+![image](https://github.com/techerbeatrice/La-ToIP_avec_Asterisk/assets/138071140/10a11c57-aa97-4cc9-b6ab-81e0e13ac901)
+
+![image](https://github.com/techerbeatrice/La-ToIP_avec_Asterisk/assets/138071140/d3d7097f-72b3-400d-9bc8-e8811b47421a)
 
