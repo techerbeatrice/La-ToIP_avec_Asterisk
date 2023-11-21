@@ -5,7 +5,7 @@ ___
 
 ____
 
-#  🔬 **Téléchargement des sources et installation des dépendances**       
+#  🔬 Téléchargement des sources et installation des dépendances       
 
 Au préalable, faire les mises à jour de paquets avec **apt update && apt upgrade -y** puis installer asterisk avec la commande **apt policy asterisk**    
 
@@ -35,3 +35,12 @@ Une fois le dossier décompressé, place-toi dedans et télécharge les biblioth
 ![image](https://github.com/techerbeatrice/La-ToIP_avec_Asterisk/assets/138071140/e5d40d99-fa88-467d-b9d0-95b032abbdfc)
 
 ![image](https://github.com/techerbeatrice/La-ToIP_avec_Asterisk/assets/138071140/779f7ece-7db3-485a-8556-cb08f97ea2d2)
+
+___
+
+#  ⚙️ Compilation à partir des sources   
+
+Toujours à la racine du dossier téléchargé, lance la commande **./configure**   
+
+![image](https://github.com/techerbeatrice/La-ToIP_avec_Asterisk/assets/138071140/37cb62bc-5064-475d-af97-226e0cf1c935)
+
