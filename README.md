@@ -101,13 +101,53 @@ ______
 
 # 🔬 Installation   
 
-Comme tu peux le voir à l'écran, lance la commande **sudo make install** pour démarrer l'installation   
+Comme tu peux le voir à l'écran, lance la commande **sudo make install** pour démarrer l'installation 
+
+![image](https://github.com/techerbeatrice/La-ToIP_avec_Asterisk/assets/138071140/7dd9b03f-b977-4127-8ab1-09f198cfec44)
+
+![image](https://github.com/techerbeatrice/La-ToIP_avec_Asterisk/assets/138071140/9e35aac2-a882-4c2b-b64a-7b4c7e469079)
+
 
 ![image](https://github.com/techerbeatrice/La-ToIP_avec_Asterisk/assets/138071140/61d4bca6-765e-420c-a0f0-057a3ec0247d)
 
+____
 
+# 👉 Gestion des droits d'accès   
+
+Créer un **groupe asterisk** avec la commande **sudo groupadd asterisk**         
+Créer un utilisateur avec les paramètres suivants :   
+Nom : **asterisk**    
+Type d'utilisateur : **système (avec l'option -r)**     
+Dossier de travail : **/var/lib/asterisk**  avec la commande ** avec **sudo useradd -r -g asterisk -d /var/lib/asterisk -s /bin/false asterisk**     
+Groupe principal : **asterisk**   
+Pour permettre à Asterisk d'accéder aux périphériques audio et aux ports de communication, ajoute l'utilisateur **asterisk**  aux groupes **audio et dialout** avec la commande **sudo usermod -aG audio,dialout asterisk**  
+
+![image](https://github.com/techerbeatrice/La-ToIP_avec_Asterisk/assets/138071140/10dd4fa5-44ce-412a-92bf-2024fe2f460b)
+
+___
+
+Pour tous les fichiers et répertoires de la liste ci-dessous, **change le propriétaire et le groupe à asterisk** et **change les permissions** pour que l'utilisateur **asterisk** ait accès **en RWE (Read, Write, Execute)** tandis que les autres utilisateurs ne  peuvent y **accéder qu'en RW**     
+**/etc/asterisk**    
+**/var/lib/asterisk**   
+**/var/log/asterisk**   
+**/var/spool/asterisk**   
+**/usr/lib/asterisk**  
+avec la commande **sudo chown -R asterisk:asterisk /etc/asterisk /var/lib/asterisk /var/log/asterisk /var/spool/asterisk /usr/lib/asterisk**   et  **sudo chmod -R 0700 /etc/asterisk /var/lib/asterisk /var/log/asterisk /var/spool/asterisk /usr/lib/asterisk**   
+
+Pour les fichiers et répertoires sous **/var/run/asterisk**, change les permissions pour que l'utilisateur asterisk ait **accès en RWE (Read, Write, Execute)** tandis que les autres utilisateurs ne peuvent y **accéder qu'en RW**  avec les commandes :   
+**sudo chown -R asterisk:asterisk /var/run/asterisk**   
+**sudo chmod -R 0700 /var/run/asterisk**   
+
+![image](https://github.com/techerbeatrice/La-ToIP_avec_Asterisk/assets/138071140/2c0adb09-b05d-42c2-85bc-d5a79635a53b)
 
 ____
 
+![image](https://github.com/techerbeatrice/La-ToIP_avec_Asterisk/assets/138071140/0b97c094-8911-4634-98d1-4305b157bcd8)
+
+___
+
 ![image](https://github.com/techerbeatrice/La-ToIP_avec_Asterisk/assets/138071140/cf9d964a-b455-4833-b601-0df8ac21021d)
+
+modifier le fichier de configuration **sip.conf**  
+
 
