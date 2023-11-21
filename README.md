@@ -65,3 +65,18 @@ N’hésite pas à modifier les options qui te sont proposées pour faire des te
 
 ![image](https://github.com/techerbeatrice/La-ToIP_avec_Asterisk/assets/138071140/d3d7097f-72b3-400d-9bc8-e8811b47421a)
 
+____
+
+Voici les fonctionnalités à sélectionner :    
+
+Dans le module **Add-ons**, sélectionne les **4 fonctionnalités** :   
+**chan_mobile**       
+**chan_ooh323**      
+**format_mp3**      
+**res_config_mysql**      
+Dans le module **Core Sound Packages**, sélectionne les **9 fonctionnalités en français FR**, puis les mêmes mais **en anglais EN**       
+Dans le module **Music On Hold file Packages**, sélectionne les **4 premières fonctionnalités**     
+Dans le module **Extras Sound Packages**, sélectionne les **4 même fonctionnalités**  (que dans **Music On Hold file Packages**, mais en **EN et FR**    
+
+
+
