@@ -84,3 +84,22 @@ Dans le module **Extras Sound Packages**, sélectionne les **4 même fonctionnal
 
 ![image](https://github.com/techerbeatrice/La-ToIP_avec_Asterisk/assets/138071140/3054d598-c1a6-4e94-b0b2-5b0cb963cc44)
 
+![image](https://github.com/techerbeatrice/La-ToIP_avec_Asterisk/assets/138071140/99e4c6a5-f48f-4b44-90c2-20094bba3ed7)
+
+![image](https://github.com/techerbeatrice/La-ToIP_avec_Asterisk/assets/138071140/ea15e392-7bd4-4121-aeb4-fe2d5e8c4c1e)
+
+_____
+
+Quand tu as terminé, sélectionne **SAVE & EXIT** et lance ensuite la commande **make** dans le terminal      
+
+Ici **make** va créer l'image d'installation compilée avec la configuration que tu as choisie      
+
+![image](https://github.com/techerbeatrice/La-ToIP_avec_Asterisk/assets/138071140/4a92c8e8-465f-4a4d-8295-8799f0f1c0d4)
+
+______
+
+# 🔬 Installation   
+
+Comme tu peux le voir à l'écran, lance la commande **sudo make install** pour démarrer l'installation   
+
+![image](https://github.com/techerbeatrice/La-ToIP_avec_Asterisk/assets/138071140/61d4bca6-765e-420c-a0f0-057a3ec0247d)
