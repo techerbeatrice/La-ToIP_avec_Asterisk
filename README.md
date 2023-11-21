@@ -76,7 +76,11 @@ Dans le module **Add-ons**, sélectionne les **4 fonctionnalités** :
 **res_config_mysql**      
 Dans le module **Core Sound Packages**, sélectionne les **9 fonctionnalités en français FR**, puis les mêmes mais **en anglais EN**       
 Dans le module **Music On Hold file Packages**, sélectionne les **4 premières fonctionnalités**     
-Dans le module **Extras Sound Packages**, sélectionne les **4 même fonctionnalités**  (que dans **Music On Hold file Packages**, mais en **EN et FR**    
+Dans le module **Extras Sound Packages**, sélectionne les **4 même fonctionnalités** que dans **Music On Hold file Packages**, mais en **EN et FR**    
 
+![image](https://github.com/techerbeatrice/La-ToIP_avec_Asterisk/assets/138071140/7abc238a-bc4d-4d6c-86ea-f2a56c558df4)
 
+![image](https://github.com/techerbeatrice/La-ToIP_avec_Asterisk/assets/138071140/f54e3706-237d-4fe5-a2c6-653d55f81497)
+
+![image](https://github.com/techerbeatrice/La-ToIP_avec_Asterisk/assets/138071140/3054d598-c1a6-4e94-b0b2-5b0cb963cc44)
 
