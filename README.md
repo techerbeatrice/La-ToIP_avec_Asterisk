@@ -92,7 +92,8 @@ _____
 
 Quand tu as terminé, sélectionne **SAVE & EXIT** et lance ensuite la commande **make** dans le terminal      
 
-Ici **make** va créer l'image d'installation compilée avec la configuration que tu as choisie      
+Ici **make** va créer l'image d'installation compilée avec la configuration que tu as choisie   
+La création dure un certain temps    
 
 ![image](https://github.com/techerbeatrice/La-ToIP_avec_Asterisk/assets/138071140/4a92c8e8-465f-4a4d-8295-8799f0f1c0d4)
 
@@ -103,3 +104,10 @@ ______
 Comme tu peux le voir à l'écran, lance la commande **sudo make install** pour démarrer l'installation   
 
 ![image](https://github.com/techerbeatrice/La-ToIP_avec_Asterisk/assets/138071140/61d4bca6-765e-420c-a0f0-057a3ec0247d)
+
+
+
+____
+
+![image](https://github.com/techerbeatrice/La-ToIP_avec_Asterisk/assets/138071140/cf9d964a-b455-4833-b601-0df8ac21021d)
+
