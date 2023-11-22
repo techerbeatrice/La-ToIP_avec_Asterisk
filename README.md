@@ -1,4 +1,4 @@
-# La ToIP avec Asterisk   
+# La ToIP avec Asterisk   (tutoriel : https://computingforgeeks.com/how-to-install-asterisk-pbx-on-ubuntu/)
 ___
 
 ![image](https://github.com/techerbeatrice/La-ToIP_avec_Asterisk/assets/138071140/77933219-1740-4d3a-8592-f8cf1ce1bfa0)
