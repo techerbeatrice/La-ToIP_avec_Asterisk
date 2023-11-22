@@ -161,3 +161,6 @@ modifier le fichier de configuration **sip.conf**
 ![image](https://github.com/techerbeatrice/La-ToIP_avec_Asterisk/assets/138071140/7ee4bc00-b317-424a-9537-ee89ace1f4c9)
 
 ![image](https://github.com/techerbeatrice/La-ToIP_avec_Asterisk/assets/138071140/b1c16e6d-e375-4db3-b55f-05fe280f368c)
+
+![image](https://github.com/techerbeatrice/La-ToIP_avec_Asterisk/assets/138071140/ff39482a-390d-4721-b895-27f63a487622)
+
